@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	double a,b,c,derta,x1,x2;
+	printf("请按顺序输入a，b，c，并用逗号隔开。(本程序默认方程有解)");
+	scanf("%lf，%lf，%lf",&a,&b,&c);
+	derta=sqrt(b*b-4*a*c);
+	x1=(-b+derta)/(2*a);
+	x2=(-b-derta)/(2*a);
+	printf("x1=%f,x2=%f",x1,x2);
+	return 0;
+ } 
