@@ -8,7 +8,7 @@ do
 		b=98-a;
 	}
 	while(4*a+2*b!=386);
-	printf("ÍÃ×ÓÓĞ%dÖ»",a);
-	printf("¼¦ÓĞ%dÖ»",b);
+	printf("å…”å­æœ‰%dåª",a);
+	printf("é¸¡æœ‰%dåª",b);
 	return 0; 
 }
