@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<math.h>
+#define rate 1.0225
+int main()
+{
+double capital,deposit,n;
+printf("请输入存款金额和年数");
+scanf("%lf %lf",&capital,&n);
+deposit=capital*pow (rate,n);
+printf("本利之和%lf",deposit);
+return 0;
+} 
