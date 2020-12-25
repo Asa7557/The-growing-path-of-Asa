@@ -10,20 +10,20 @@ int Gcd(int a, int b)
         if (x == y)
         {
             r = x;
-            printf("ËûÃÇµÄ×î´ó¹«Ô¼ÊıÎª%d", r);
+            printf("ä»–ä»¬çš„æœ€å¤§å…¬çº¦æ•°ä¸º%d", r);
         }
     }
 }
 int main()
 {
     int r, a, b;
-    printf("ÇëÊäÈëÁ½¸öÕıÕûÊı");
+    printf("è¯·è¾“å…¥ä¸¤ä¸ªæ­£æ•´æ•°");
     scanf("%d %d", &a, &b);
     if (a > 0 && b > 0)
         r = Gcd(a, b);
     else
     {
-        printf("ÇëÖØĞÂÊäÈëÁ½¸öÕıÕûÊı");
+        printf("è¯·é‡æ–°è¾“å…¥ä¸¤ä¸ªæ­£æ•´æ•°");
         scanf("%d %d", &a, &b);
         r = Gcd(a, b);
     }
