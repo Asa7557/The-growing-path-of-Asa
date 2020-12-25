@@ -10,9 +10,9 @@ int main()
            	{
                 if (a+b+c==100&&5*a+3*b+c/3==100) 
 		        {
-				 printf("公鸡%d只",a);
-                 printf("母鸡%d只",b); 
-    	         printf("小鸡%d只\n",c);
+				 printf("鹿芦录娄%d脰禄",a);
+                 printf("脛赂录娄%d脰禄",b); 
+    	         printf("脨隆录娄%d脰禄\n",c);
                 }
             } 
         }
