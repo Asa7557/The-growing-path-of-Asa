@@ -2,7 +2,7 @@
 int main()
 {
 	double score;
-	printf("ÇëÊäÈë³É¼¨");
+	printf("Ã‡Ã«ÃŠÃ¤ÃˆÃ«Â³Ã‰Â¼Â¨");
 	scanf("%lf",&score);
 	if (score>=90&&score<=100)
 	printf("A");
