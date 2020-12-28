@@ -2,16 +2,16 @@
 int main()
 {
 	int n;
-	printf("ÇëÊäÈëÊı¾İ×ÜÊı");
+	printf("è¯·è¾“å…¥æ•°æ®æ€»æ•°");
 	scanf("%d",&n);
 	int a=0,b=0,c=0,d=0,e=0;
     double f[n];
 	for(;a<n;a++)
 	{
-		printf("ÇëÊäÈëµÚ%d¸öÊı¾İ",a+1);
+		printf("è¯·è¾“å…¥ç¬¬%dä¸ªæ•°æ®",a+1);
 		scanf("%d",&f[a]);
 	}
-	while(b<n)
+	for(;b<n;b++)
 	{
 		for(c=0;c<n;c++)
 	    {
@@ -22,7 +22,6 @@ int main()
 			f[c+1]=d;
 		}
 	    }
-	    b++;
 	}
 	for(;e<n;e++)
 	{
