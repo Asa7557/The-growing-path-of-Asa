@@ -7,7 +7,7 @@ int Gcd(int a,int b)
 	{
 		if(a%t==0&&b%t==0)
 		{
-		printf("ËûÃÇµÄ×î´ó¹«Ô¼ÊýÎª%d",t);
+		printf("ä»–ä»¬çš„æœ€å¤§å…¬çº¦æ•°ä¸º%d",t);
 		break;
 	    }
 	}
@@ -15,7 +15,7 @@ int Gcd(int a,int b)
 int main()
 {
 	int a,b,t;
-	begin:printf("ÇëÊäÈëÁ½¸öÕýÕûÊý");
+	begin:printf("è¯·è¾“å…¥ä¸¤ä¸ªæ­£æ•´æ•°");
 	scanf("%d %d",&a,&b);
 	if(a>0&&b>0)
 	t=Gcd(a,b);
