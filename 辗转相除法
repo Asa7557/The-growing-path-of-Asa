@@ -7,13 +7,13 @@ int Gcd(int a,int b)
     r=a%b,a=b,b=r;
     }
     r=a;
-    printf("ËûÃÇµÄ×î´ó¹«Ô¼ÊýÎª%d",r);
+    printf("ä»–ä»¬çš„æœ€å¤§å…¬çº¦æ•°ä¸º%d",r);
     return r;
 }
 int main()
 {
 	int a,b,t;
-	begin:printf("ÇëÊäÈëÁ½¸öÕýÕûÊý");
+	begin:printf("è¯·è¾“å…¥ä¸¤ä¸ªæ­£æ•´æ•°");
 	scanf("%d %d",&a,&b);
 	if(a>0&&b>0)
 	t=Gcd(a,b);
