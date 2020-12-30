@@ -12,7 +12,7 @@ void fun(int n)
 int main( )
 {
     int n;
-    printf("ÊäÈëÒ»¸öÕûÊı:");    
+    printf("è¾“å…¥ä¸€ä¸ªæ•´æ•°:");        
     scanf("%d",&n);   
 	fun(n);
 }
