@@ -1,11 +1,16 @@
 #include<stdio.h>
 int main()
 {
-int x;
+int x,m,temp;
 scanf("%d",&x);
-int c=x%10;
-int b=x%100-c;
-int a=x/100;
-int y=c*100+b+a;
-printf("%d",y);
+m=x;
+temp=0;
+while(m!=0)
+{
+  temp=10*temp+m%10;
+	m=m/10;
 }
+printf("%d",temp);
+return 0;
+}
+
