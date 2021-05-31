@@ -3,22 +3,22 @@ using namespace std;
 int main(){
 	int n,MAXN;
 	cin>>n; 
-	MAXN=n+1;//¶¨Òån+1´óÐ¡µÄÊý×é 
-	int prime[MAXN]={0};//Ä¬ÈÏËùÓÐÊý¶¼ÊÇËØÊý£¬±êÊ¶Îª 0 
+	MAXN=n+1;//å®šä¹‰n+1å¤§å°çš„æ•°ç»„ 
+	int prime[MAXN]={0};//é»˜è®¤æ‰€æœ‰æ•°éƒ½æ˜¯ç´ æ•°ï¼Œæ ‡è¯†ä¸º 0 
 	int m = sqrt(MAXN);
 	prime[0] = 1;
-	prime[1] = 1;//0ºÍ 1 ÌÞ³ý£¬ 
+	prime[1] = 1;//0å’Œ 1 å‰”é™¤ï¼Œ 
 	for(int i = 2; i <= m; i++)
 	{
 		if(prime[i])
 		{
 			continue;
-		}//Ìø¹ýÒÑ¾­ÌÞ³ýµÄ·ÇËØÊý£¬¼õÉÙÑ­»·´ÎÊý£¬½ÚÊ¡Ê±¼ä¸´ÔÓ¶È 
+		}//è·³è¿‡å·²ç»å‰”é™¤çš„éžç´ æ•°ï¼Œå‡å°‘å¾ªçŽ¯æ¬¡æ•°ï¼ŒèŠ‚çœæ—¶é—´å¤æ‚åº¦ 
 		for(int j = i; j * i < MAXN; j++)
 		{
 			prime[i * j] =1;
 		}
-	}//É¸·¨ÌÞ³ý·ÇËØÊý 
+	}//ç­›æ³•å‰”é™¤éžç´ æ•° 
 	for(int i = 0; i < MAXN; i++)
 	{
 		if(!prime[i]){
