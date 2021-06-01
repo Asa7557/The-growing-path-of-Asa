@@ -1,5 +1,5 @@
 #include<stdio.h>
-char output(int x)//输出时对字符进行转换 
+char output(int x)//杈撳嚭鏃跺瀛楃杩涜杞崲 
 {
 	switch(x)
 	{
@@ -26,23 +26,23 @@ int main()
 	while(1)
     {
         int n,r,exchange=0;
-	    if(scanf("%d %d",&n,&r)==EOF) break;//文档末尾结束 
+	    if(scanf("%d %d",&n,&r)==EOF) break;//鏂囨。鏈熬缁撴潫 
 	    if(n<r)
 		{
-			printf("%c\n",output(n));//处理特殊情况n<r 
+			printf("%c\n",output(n));//澶勭悊鐗规畩鎯呭喌n<r 
 		}
 		else
 		{
 		    int y=n,w,i=0;
 		    char store[100];
-		    while(y)//进制转换 
+		    while(y)//杩涘埗杞崲 
 		    {
 		    	w=y%r;
 			    store[i]=output(w);
 		    	y=y/r;
 		    	i++;
 	    	}
-		    while(i--)//输出 
+		    while(i--)//杈撳嚭 
 		    {
 		    	printf("%c",store[i]);
 		    }
