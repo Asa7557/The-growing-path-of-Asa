@@ -3,7 +3,7 @@ int main()
 {
 	int n;
 	scanf("%d",&n);
-	if(n==1)//ÌÞ³ý n Îª 1 µÄÇé¿ö 
+	if(n==1)//å‰”é™¤ n ä¸º 1 çš„æƒ…å†µ 
 	{
 		printf("False");
 	}
@@ -20,12 +20,12 @@ int main()
 	while(n%5==0)
 	{
 	    n=n/5;
-	}//3¸öÑ­»·³ýµôËùÓÐ 2 3 5Òò×Ó £» 
-	if(n==1)//Ìá³öÒò×ÓºóµÄÊýÈç¹ûÊÇ 1 ÔòÎª³óÊý £» 
+	}//3ä¸ªå¾ªçŽ¯é™¤æŽ‰æ‰€æœ‰ 2 3 5å› å­ ï¼› 
+	if(n==1)//æå‡ºå› å­åŽçš„æ•°å¦‚æžœæ˜¯ 1 åˆ™ä¸ºä¸‘æ•° ï¼› 
 	{
 		printf("True");
 	}
-	else//²»ÊÇ1ËµÃ÷ n »¹ÓÐÆäËûÒò×Ó£¬²»ÊÇ³óÊý£» 
+	else//ä¸æ˜¯1è¯´æ˜Ž n è¿˜æœ‰å…¶ä»–å› å­ï¼Œä¸æ˜¯ä¸‘æ•°ï¼› 
 	{
 		printf("False");
 	}
