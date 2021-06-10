@@ -3,11 +3,11 @@ int main()
 {
 	int x;
 	scanf("%d",&x);
-	while(x)//x=0½áÊø 
+	while(x)//x=0ç»“æŸ 
 	{
 		int count=0; 
-		int prime[x]={0},RealPrime[10000]={0},sign=0;//ÍÕ·åÊ½ÃüÃû 
-		for(int j=2;j<=10000;j++)//ËØÊıÉ¸£»
+		int prime[x]={0},RealPrime[10000]={0},sign=0;//é©¼å³°å¼å‘½å 
+		for(int j=2;j<=10000;j++)//ç´ æ•°ç­›ï¼›
 		{
 			if(prime[j]) continue;
 	    	for(int k=j;k*j<10000;k++)
@@ -16,7 +16,7 @@ int main()
 	    	}
 		}
 		prime[0]=prime[1]=1;
-		for(int i=0;i<x;i++)//½«ÏÂ±ê±äÎªÊı×éÖĞµÄÔªËØ 
+		for(int i=0;i<x;i++)//å°†ä¸‹æ ‡å˜ä¸ºæ•°ç»„ä¸­çš„å…ƒç´  
 		{
 			if(!prime[i])
 			{
@@ -24,7 +24,7 @@ int main()
 				sign++;
 			}
 		}
-		for(int p=0;p<=sign/2;p++)//Í³¼ÆÄÜ²ğ³ÉµÄ¸öÊı 
+		for(int p=0;p<=sign/2;p++)//ç»Ÿè®¡èƒ½æ‹†æˆçš„ä¸ªæ•° 
 		{
 			for(int q=sign-1;q>=sign/2;q--)
 			{
