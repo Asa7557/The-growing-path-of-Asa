@@ -10,11 +10,11 @@ int Fprime(int num)
 		}
 	}
 	return 1;
-}//判断素数函数 
+}//鍒ゆ柇绱犳暟鍑芥暟 
 int main()
 {
 	int min,max,sign=0,prime[10000]={0};
-	cout<<"请输入上限和下限" <<endl;
+	cout<<"璇疯緭鍏ヤ笂闄愬拰涓嬮檺" <<endl;
 	cin>>min;
 	cin>>max;
 	for(int j=min;j<=max;j++)
@@ -24,7 +24,7 @@ int main()
 	    	prime[sign]=j;
 	    	sign++;
 		}
-	}//筛选范围内素数 
+	}//绛涢�夎寖鍥村唴绱犳暟 
 	for(int k=0;k<sign;)
 	{
 		if(prime[k]+2==prime[k+1])
@@ -32,6 +32,6 @@ int main()
 	    	printf("%d,%d\n",prime[k],prime[k+1]);
 		}
 		k=k+1;
-	}//循环输出符合条件的素数对 
+	}//寰幆杈撳嚭绗﹀悎鏉′欢鐨勭礌鏁板 
 	return 0;
  } 
