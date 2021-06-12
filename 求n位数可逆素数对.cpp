@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<math.h>
-int Fprime(int num)//ÅĞ¶ÏËØÊıº¯Êı 
+int Fprime(int num)//åˆ¤æ–­ç´ æ•°å‡½æ•° 
 {
 	int i;
 	for(i=2;i<num;i++)
@@ -13,7 +13,7 @@ int Fprime(int num)//ÅĞ¶ÏËØÊıº¯Êı
 int main()
 {
 	int n,prime[100000]={0},sum=0,max,min,sign=0;
-	printf("ÇëÊäÈëÊı¾İµÄÎ»Êı") ; 
+	printf("è¯·è¾“å…¥æ•°æ®çš„ä½æ•°") ; 
 	scanf("%d",&n); 
 	max=pow(10,n);
 	min=pow(10,n-1);
@@ -24,7 +24,7 @@ int main()
 			prime[sign]=i;
 			sign++;
 		}
-	}//½«nÎ»ÊıÖĞµÄËØÊı±£´æµ½Êı×é 
+	}//å°†nä½æ•°ä¸­çš„ç´ æ•°ä¿å­˜åˆ°æ•°ç»„ 
 	for(int k=0;k<sign;k++)
 	{
 		int temp=prime[k],nixu=0;
