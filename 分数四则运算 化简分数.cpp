@@ -1,5 +1,5 @@
 #include<stdio.h>
-int simplify(int m,int n)//»¯¼ò·ÖÊý²¢Êä³ö 
+int simplify(int m,int n)//åŒ–ç®€åˆ†æ•°å¹¶è¾“å‡º 
 {
 	if(m==n) printf("1\n");
 	else
@@ -18,13 +18,13 @@ int main()
 {
 	int T;
 	scanf("%d",&T);
-	for(int i=0;i<T;i++)//¿ØÖÆÍâÑ­»· 
+	for(int i=0;i<T;i++)//æŽ§åˆ¶å¤–å¾ªçŽ¯ 
 	{
 		int a,b,c,d,ra,rb;
 	    char x;
 	    scanf("%d %*c %d %c %d %*c %d",&a,&b,&x,&c,&d);
-		//%*c±íÊ¾ÊäÈëÖÐ£¬ºöÂÔÒ»¸ö×Ö·û
-		switch(x)//switch case Óï¾ä·Ö±ðÔËËã+ - * /£» 
+		//%*cè¡¨ç¤ºè¾“å…¥ä¸­ï¼Œå¿½ç•¥ä¸€ä¸ªå­—ç¬¦
+		switch(x)//switch case è¯­å¥åˆ†åˆ«è¿ç®—+ - * /ï¼› 
 		{
 	        case '+':
 	        {	
