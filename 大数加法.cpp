@@ -16,7 +16,7 @@ int main()
         {
             sum[k]=sum[k]-'0'+sa[i];
              n=k;
-            while(sum[n]>'9')//½øÖÆ×ª»» 
+            while(sum[n]>'9')//Â½Ã¸Ã–Ã†Ã—ÂªÂ»Â» 
             {
                 sum[n+1]=sum[n+1]+(sum[n]-'0')/10;
                 sum[n]=(sum[n]-'0')%10+'0';
@@ -37,7 +37,7 @@ int main()
         }
         printf("Case %d:\n%s + %s = ",j,sa,sb);
         j++;
-        for(i=1008;sum[i]=='0';i--);//Êä³ö 
+        for(i=1008;sum[i]=='0';i--);//ÃŠÃ¤Â³Ã¶ 
         for(;i>=0;i--)
             printf("%c",sum[i]);
         if(t>0)
