@@ -2,21 +2,21 @@
 int main()
 {
 	int n;
-	while(scanf("%d",&n)&&n!=0)//¿ØÖÆÍâÑ­»· 
+	while(scanf("%d",&n)&&n!=0)//æ§åˆ¶å¤–å¾ªç¯ 
 	{
 		int a,b,c,asum=0,bsum=0,csum=0;
 		a=n,b=n,c=n;
-		while(a)//10½øÖÆ
+		while(a)//10è¿›åˆ¶
 		{
 			asum=asum+a%10;
 			a=a/10;
 		}
-		while(b)//12½øÖÆ 
+		while(b)//12è¿›åˆ¶ 
 		{
 			bsum=bsum+b%12;
 			b=b/12;
 		}
-		if(asum==bsum)//Èç¹ûÕâÒ»²½²»Âú×ãÔò²»Çó16½øÖÆµÄ£¬¼õĞ¡¸´ÔÓ¶È 
+		if(asum==bsum)//å¦‚æœè¿™ä¸€æ­¥ä¸æ»¡è¶³åˆ™ä¸æ±‚16è¿›åˆ¶çš„ï¼Œå‡å°å¤æ‚åº¦ 
 		{
 			while(c)
 			{
@@ -30,7 +30,7 @@ int main()
 			else printf("%d is not a Sky Number.\n",n);
 		}
 		else printf("%d is not a Sky Number.\n",n);
-		//printf("%d %d %d ",asum,bsum,csum);  ÓÃÕâ¾äµ÷´í£» 
+		//printf("%d %d %d ",asum,bsum,csum);  ç”¨è¿™å¥è°ƒé”™ï¼› 
 	}
 	return 0; 
 }
