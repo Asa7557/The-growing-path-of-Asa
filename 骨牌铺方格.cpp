@@ -1,5 +1,5 @@
-/*做法同前两题 
-注：hdoj 过了 */
+/*鍋氭硶鍚屽墠涓ら 
+娉細hdoj 杩囦簡 */
 #include<iostream>
 #include<cstring>
 using namespace std;
@@ -7,7 +7,7 @@ long long int c[500];
 int main()
 {
 	int n;
-	while(cin>>n)//默认文档末尾结束 
+	while(cin>>n)//榛樿鏂囨。鏈熬缁撴潫 
 	{
 		memset(c,0,sizeof(c));
 		int i;
