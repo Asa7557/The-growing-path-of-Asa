@@ -1,5 +1,5 @@
 #include<stdio.h>
-int factor(int m){ //Çó n ÀÛ¼Ó 
+int factor(int m){ //æ±‚ n ç´¯åŠ  
 	int sum=0;
 	for(int i=1; i<=m; i++) {
 		sum=sum+i;
@@ -12,16 +12,16 @@ int main() {
 		n++;
 		int temp=3;
 		a[0]=1,a[1]=1,a[2]=1;
-		for(int i=2; i<n; i++) { //´ò±í 
+		for(int i=2; i<n; i++) { //æ‰“è¡¨ 
 			a[temp]=1;
-			a[temp+i]=1;//Á½±ßµÄ¶¼ÊÇ1 
+			a[temp+i]=1;//ä¸¤è¾¹çš„éƒ½æ˜¯1 
 			for(int j=1; j<i; j++) {
-				a[temp+j]=a[temp+j-i]+a[temp+j-i-1];//ÖĞ¼äµÄµÈÓÚÉÏÒ»ĞĞ¶ÔÓ¦Á½¸öÔªËØÏà¼Ó 
+				a[temp+j]=a[temp+j-i]+a[temp+j-i-1];//ä¸­é—´çš„ç­‰äºä¸Šä¸€è¡Œå¯¹åº”ä¸¤ä¸ªå…ƒç´ ç›¸åŠ  
 			}
 			temp+=i+1;
 		}
-		for(int k=n-1; k>0;) {//µ¹ĞòÊä³ö 
-			for(int t=k;t<n;t++) printf("%3c",' ');//¶à´Îµ÷ÊÔÃÀ»¯ 
+		for(int k=n-1; k>0;) {//å€’åºè¾“å‡º 
+			for(int t=k;t<n;t++) printf("%3c",' ');//å¤šæ¬¡è°ƒè¯•ç¾åŒ– 
 			for(int g=0;g<k;g++){
 				printf("%6d",a[factor(k)-k+g]);
 			}
