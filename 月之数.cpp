@@ -9,10 +9,10 @@
    8	576
    ...
    A(n)=A(n-1)*2+pow(2,n-1)*/
-//hdoj ¹ýÁË 
+//hdoj è¿‡äº† 
 #include<stdio.h>
 #include<string.h>
-int mypow(int x)//pow º¯ÊýÓÐÎó²î£¬Ñ­»·ÔòÃ»ÓÐ 
+int mypow(int x)//pow å‡½æ•°æœ‰è¯¯å·®ï¼Œå¾ªçŽ¯åˆ™æ²¡æœ‰ 
 {
 	int sq=1;
 	for(int g=1;g<x;g++)
@@ -25,13 +25,13 @@ int main()
 {
 	int t;
 	scanf("%d",&t);
-	while(t--)//ÍâÑ­»·¿ØÖÆÑ­»·´ÎÊý 
+	while(t--)//å¤–å¾ªçŽ¯æŽ§åˆ¶å¾ªçŽ¯æ¬¡æ•° 
 	{
 		int n;
 		int a[22];
-		memset(a,0,sizeof(a));//³õÊ¼»¯ 
+		memset(a,0,sizeof(a));//åˆå§‹åŒ– 
 		scanf("%d",&n);
-		for(int i=1;i<=n;i++)//µÝÍÆ¹«Ê½ 
+		for(int i=1;i<=n;i++)//é€’æŽ¨å…¬å¼ 
 		{
 			a[i]=2*a[i-1]+mypow(i-1);
 		}
